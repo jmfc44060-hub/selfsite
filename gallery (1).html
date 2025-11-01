@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <h1>Gallery</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Section -->
+    <main class="gallery-container">
+        <h2>Photo Gallery</h2>
+        <p>Here are some moments from our creative workspace.</p>
+
+        <div class="image-grid">
+            <!-- Each image opens full-size in a new tab -->
+            <a href="pexels-olly-927022.jpg" target="_blank">
+                <img src="pexels-olly-927022.jpg" alt="Smiling man reading a book in an office">
+            </a>
+            <a href="office-workers-busy-stockcake.jpg" target="_blank">
+                <img src="office-workers-busy-stockcake.jpg" alt="Busy team working in a modern office">
+            </a>
+            <a href="african-office-worker-portrait-handsome-male-talking-phone-44341693.webp" target="_blank">
+                <img src="african-office-worker-portrait-handsome-male-talking-phone-44341693.webp" alt="Professional man talking on the phone at work">
+            </a>
+        </div>
+
+        <!-- Embedded YouTube Video -->
+        <section class="video-section">
+            <h2>Featured Video</h2>
+            <!-- Video opens in YouTube controls; no autoplay -->
+            <div class="video-wrapper">
+                <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/ddUk2scmTRE"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Audio Player -->
+        <section class="audio-section">
+            <h2>Listen to Our Audio</h2>
+            <!-- Audio player with controls -->
+            <audio controls>
+                <source src="myAudio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Portfolio | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
