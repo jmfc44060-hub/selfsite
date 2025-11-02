@@ -1,46 +1,84 @@
 <!DOCTYPE html>
-<!-- 
-    Author: [Your Name]
-    Date: [Today's Date]
-    File: contact.html
-    Description: Contact page with relevant information.
--->
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact Me - My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <!-- Header and Navigation -->
     <header>
-        <img src="logo.png" alt="Site Logo">
-        <h1>Contact</h1>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="interests.html">My Interests</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
+    <!-- Main Contact Section -->
     <main>
-        <section>
-    <h2>Get in Touch</h2>
-    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-    <p>Follow me on social media for updates and news!</p>
-</section>
+        <section class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>If you’d like to contact me, please fill out the form below or email me directly at 
+                <a href="mailto:jmfc44060@gmail.com" class="email-link">jmfc44060@gmail.com</a>.
+            </p>
+
+            <!-- Contact Form -->
+            <form id="webForm" action="#">
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <!-- Name Field -->
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <!-- Email Field -->
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                    <!-- Subject Field -->
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject">
+                        <option value="general">General Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="collaboration">Collaboration</option>
+                    </select>
+
+                    <!-- Message Area -->
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+                    <!-- Radio Buttons -->
+                    <p>Preferred Contact Method:</p>
+                    <label><input type="radio" name="contactMethod" value="email" checked> Email</label>
+                    <label><input type="radio" name="contactMethod" value="phone"> Phone</label>
+
+                    <!-- Checkbox -->
+                    <p>Subscribe to Updates:</p>
+                    <label><input type="checkbox" name="subscribe" value="yes"> Yes, send me occasional updates.</label>
+
+                    <!-- Submit Button -->
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+
+            <!-- Output Div -->
+            <p><div id="output"></div></p>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2025 My Portfolio | All Rights Reserved</p>
     </footer>
 
+    <!-- Link to JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>
